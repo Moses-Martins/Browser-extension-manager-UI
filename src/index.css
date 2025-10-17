@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
-html, body {
-  margin: 0;
-  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* keeps it static on scroll */
-  background-size: cover;
+@layer base {
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background 0.4s ease-in-out;
+  }
+
+  /* Trigger when html has .dark */
+  html.dark body {
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  }
 }

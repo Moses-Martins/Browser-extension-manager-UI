@@ -3,6 +3,7 @@ import CardList from './cardlist/CardList';
 import FilterButtons, { type Filter } from './components/filterbutton/FilterButtons';
 import Header from './components/header/Header';
 
+
 function App() {
 
   const [activeFilter, setActiveFilter] = useState<Filter>("All");
@@ -17,6 +18,7 @@ function App() {
         <FilterButtons activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
       </div>
       <CardList activeFilter={activeFilter} />
+    
     </>
   )
 }

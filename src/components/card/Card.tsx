@@ -46,7 +46,7 @@ function Card({ name, description, icon, activeFilter }: CardProps) {
   }
 
   return (
-    <div className="flex flex-col w-[29.3vw] p-5 rounded-xl bg-white shadow-md transition-transform duration-200 hover:scale-[1.01] max-sm:w-[90vw]">
+    <div className="flex flex-col w-[29.3vw] p-5 rounded-xl bg-white dark:bg-black shadow-md transition-transform duration-200 hover:scale-[1.01] max-sm:w-[90vw]">
       {/* Top */}
       <div className="flex items-start mb-5">
         <div>{icon}</div>
