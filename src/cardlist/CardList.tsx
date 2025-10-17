@@ -22,7 +22,7 @@ function CardList({activeFilter}: CardListProps) {
     
 
     return (
-        <section className="w-max mt-[4vh] mb-[6vh] pl-[5px] mx-[auto] grid grid-cols-3 grid-rows-3 gap-[12px]">
+        <section className="w-max mt-[4vh] mb-[6vh] pl-[5px] mx-[auto] grid grid-cols-3 gap-[12px] max-sm:grid-cols-1">
             <Card name="DevLens" description="Quickly inspect page layouts and visualize element boundaries." icon={<img src={Devlens} alt={Devlens} />} activeFilter={activeFilter} />
             <Card name="StyleSpy" description="Instantly analyze and copy CSS from any webpage element." icon={<img src={StyleSpy} alt="StyleSpy" />} activeFilter={activeFilter} />
             <Card name="SpeedBoost" description="Optimizes browser resource usage to accelerate page loading." icon={<img src={SpeedBoost} alt="SpeedBoost" />} activeFilter={activeFilter} />
