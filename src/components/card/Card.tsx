@@ -46,15 +46,15 @@ function Card({ name, description, icon, activeFilter }: CardProps) {
   }
 
   return (
-    <div className="flex flex-col w-[29.3vw] p-5 rounded-xl bg-white dark:bg-black shadow-md transition-transform duration-200 hover:scale-[1.01] max-sm:w-[90vw]">
+    <div className="flex flex-col justify-between w-[30.3vw] h-[100%] p-5 rounded-xl bg-white dark:bg-black shadow-md transition-transform duration-200 hover:scale-[1.01] max-sm:w-[90vw]">
       {/* Top */}
       <div className="flex items-start mb-5">
         <div>{icon}</div>
-        <div className="flex-grow ml-2.5 mt-[-1%]">
-          <h3 className="m-0 text-[clamp(1rem,1.5vw,1.5rem)] font-semibold text-gray-800">
+        <div className="flex-grow ml-2.5 mt-[-1.7%]">
+          <h3 className="m-0 text-[clamp(1rem,1.5vw,6.5rem)] font-semibold text-gray-800 dark:text-white">
             {name}
           </h3>
-          <p className="mt-1 text-[clamp(0.85rem,1vw,1.1rem)] text-gray-600 leading-snug">
+          <p className="mt-1 w-[20vw] max-sm:w-[68vw] text-[clamp(0.85rem,1vw,5.1rem)] text-gray-600 leading-snug dark:text-gray-400">
             {description}
           </p>
         </div>
@@ -64,7 +64,7 @@ function Card({ name, description, icon, activeFilter }: CardProps) {
       <div className="flex justify-between items-center">
         <button
           onClick={handleRemoveClick}
-          className="px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-600 text-sm font-medium hover:bg-gray-100 transition-colors"
+          className="px-5 py-2 rounded-full border border-gray-300 bg-white text-gray-600 text-sm font-medium hover:bg-gray-100 transition-colors dark:bg-gray-700 dark:text-gray-100"
         >
           Remove
         </button>

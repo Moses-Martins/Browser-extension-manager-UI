@@ -10,7 +10,7 @@ function FilterButtons({ activeFilter, setActiveFilter }: FilterButtonsProps) {
 
   const getButtonClasses = (filter: Filter): string => {
     const baseClasses =
-      "px-5 py-2 rounded-full font-bold transition-colors duration-200 ease-in-out cursor-pointer shadow-sm";
+      "px-5 py-2 rounded-full font-bold transition-colors duration-200 ease-in-out cursor-pointer shadow-sm text-[clamp(1rem,1.2vw,4.5rem)]";
     return activeFilter === filter
       ? `${baseClasses} bg-red-600 text-white border border-red-600`
       : `${baseClasses} bg-white text-gray-700 border border-gray-400 hover:bg-gray-100`;
