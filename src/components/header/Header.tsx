@@ -29,7 +29,7 @@ function Header() {
 
       {/* Toggle Button */}
       <img
-        className="mx-[0.6%] rounded-[9px] p-[5px] bg-[hsl(0_0%_93%)] dark:bg-gray-700 cursor-pointer transition w-[2.4vw] h-[auto] max-sm:w-[7vw] max-sm:mx-[2.4%]"
+        className="mx-[0.6%] rounded-[9px] p-[0.5%] bg-[hsl(0_0%_93%)] dark:bg-gray-700 cursor-pointer transition w-[2.4%] max-sm:w-[7vw] max-sm:mx-[2.4%] rounded-[30%]"
         src={isDark ? LightMode : DarkMode}
         alt="Toggle theme"
         onClick={() => setIsDark(!isDark)}
