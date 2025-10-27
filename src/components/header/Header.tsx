@@ -24,12 +24,12 @@ function Header() {
 
 
   return (
-    <header className="flex items-center justify-between w-[92vw] h-[8vh] mt-[4vh] mx-auto rounded-[10px] bg-white dark:bg-gray-600 transition max-sm:w-[90vw]">
-      <img className="mx-[0.9%] h-[80%] max-sm:mx-[2.4%]" src={Logo} alt="Logo" />
+    <header className="flex items-center justify-between w-[95%] h-12 mt-6 mx-auto rounded-md bg-white dark:bg-gray-600 transition max-sm:w-90">
+      <img className="mx-2 max-sm:mx-2" src={Logo} alt="Logo" />
 
       {/* Toggle Button */}
       <img
-        className="mx-[0.6%] rounded-[9px] p-[0.5%] bg-[hsl(0_0%_93%)] dark:bg-gray-700 cursor-pointer transition w-[2.4%] max-sm:w-[7vw] max-sm:mx-[2.4%] rounded-[30%]"
+        className="mx-2 p-1 bg-[hsl(0_0%_93%)] dark:bg-gray-700 cursor-pointer transition w-7 max-sm:w-7 max-sm:mx-2 rounded-md"
         src={isDark ? LightMode : DarkMode}
         alt="Toggle theme"
         onClick={() => setIsDark(!isDark)}

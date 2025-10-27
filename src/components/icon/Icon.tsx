@@ -7,7 +7,7 @@ export type IconProps = {
 function Icon({src, alt}: IconProps) {
     
     return (
-        <img className="w-[100%]" src={src} alt={alt} />   
+        <img className="w-12" src={src} alt={alt} />   
     )
 }
 

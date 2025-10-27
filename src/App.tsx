@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Header />
-      <div className="w-[93%] mx-[auto] mt-[5vh] mb-[4vh] flex items-center justify-between max-sm:flex-col">
-        <h1 className="text-[clamp(2rem,2vw,8.5rem)] font-bold text-gray-800 max-sm:mb-[3vh] dark:text-white">Extensions List</h1>
+      <div className="w-[93%] max-w-7xl mx-auto mt-6 mb-6 flex items-center justify-between max-sm:flex-col">
+        <h1 className="text-2xl font-bold text-gray-800 max-sm:mb-[3vh] dark:text-white">Extensions List</h1>
         <FilterButtons activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
       </div>
       <CardList activeFilter={activeFilter} />

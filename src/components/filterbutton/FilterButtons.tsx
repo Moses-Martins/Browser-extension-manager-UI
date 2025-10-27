@@ -10,14 +10,14 @@ function FilterButtons({ activeFilter, setActiveFilter }: FilterButtonsProps) {
 
   const getButtonClasses = (filter: Filter): string => {
     const baseClasses =
-      "px-[1.8vw] py-[1.9%] rounded-full font-bold transition-colors duration-200 ease-in-out cursor-pointer shadow-sm text-[clamp(1rem,1.2vw,4.5rem)]";
+      "px-3 py-1 rounded-full font-bold transition-colors duration-200 ease-in-out cursor-pointer shadow-sm text-1";
     return activeFilter === filter
       ? `${baseClasses} bg-red-600 text-white border border-red-600`
       : `${baseClasses} bg-white text-gray-700 border border-gray-400 hover:bg-gray-100`;
   };
 
   return (
-    <div className="w-max flex space-x-[1vw] rounded-lg">
+    <div className="w-max flex space-x-2 rounded-lg">
       {filters.map((filter) => (
         <button
           key={filter}

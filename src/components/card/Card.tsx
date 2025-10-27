@@ -46,25 +46,25 @@ function Card({ name, description, icon, activeFilter }: CardProps) {
   }
 
   return (
-    <div className="flex flex-col justify-between w-full h-full p-[6%] rounded-xl bg-white dark:bg-black shadow-md transition-transform duration-200 hover:scale-[1.01]">     
-     {/* Top */}
+    <div className="flex flex-col justify-between p-6 rounded-xl bg-white dark:bg-black shadow-md transition-transform duration-200 hover:scale-[1.01]">
+      {/* Top */}
       <div className="flex items-start mb-5">
-        <div className="w-[12%]">{icon}</div>
-        <div className="flex-grow ml-[3%] mt-[-1.5%] max-sm:mt-[-0.8%]">
-          <h3 className="m-0 text-[clamp(1rem,1.5vw,6.5rem)] font-semibold text-gray-800 dark:text-white">
+        <div className="flex-shrink-0">{icon}</div>
+        <div className="flex-grow ml-3 mt-[-1.5%] max-sm:mt-[-0.8%]">
+          <h3 className="m-0 text-lg font-semibold text-gray-800 dark:text-white">
             {name}
           </h3>
-          <p className="mt-1 w-[20vw] max-sm:w-[68vw] text-[clamp(0.85rem,1vw,5.1rem)] text-gray-600 leading-snug dark:text-gray-400">
+          <p className="mt-1 text-gray-600 leading-snug dark:text-gray-400">
             {description}
           </p>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="mt-[1%] flex justify-between items-center">
+      <div className="mt-1 flex justify-between items-center">
         <button
           onClick={handleRemoveClick}
-          className="px-[5%] py-[2.5%] rounded-full border border-gray-300 bg-white text-gray-600 text-[clamp(0.85rem,1vw,5.1rem)] font-medium hover:bg-gray-100 transition-colors dark:bg-gray-700 dark:text-gray-100"
+          className="px-3 py-2 rounded-full border border-gray-300 bg-white text-gray-600 font-medium hover:bg-gray-100 transition-colors dark:bg-gray-700 dark:text-gray-100"
         >
           Remove
         </button>
@@ -72,10 +72,10 @@ function Card({ name, description, icon, activeFilter }: CardProps) {
         {/* Toggle */}
         <div
           onClick={handleToggle}
-          className={`w-[11%] h-[3.3vh] rounded-full flex items-center p-[0.9%] cursor-pointer transition-all duration-300 ${isActive ? "bg-orange-400 justify-end" : "bg-gray-300 justify-start"
+          className={`w-10 h-5 rounded-full flex items-center p-[2px] cursor-pointer transition-all duration-300 ${isActive ? "bg-orange-400 justify-end" : "bg-gray-300 justify-start"
             }`}
         >
-          <div className="w-[44%] h-[100%] rounded-full bg-white shadow transition-transform duration-300" />
+          <div className="w-4 h-4 rounded-full bg-white shadow transition-transform duration-300" />
         </div>
       </div>
     </div>
